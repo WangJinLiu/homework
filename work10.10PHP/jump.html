@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹窗</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="max">
+		
+	
+		<div id="but">弹弹弹</div>
+		<!-- 黑黑的那个 -->
+		<div id="wrap">
+			
+		</div>
+		<div id="tan">
+			<div class="top">
+				<h1>弹窗头部</h1>
+				<div class="x">X</div>
+			</div>
+			<div class="center">
+				<h3>这是一个弹窗效果</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ullam, blanditiis, quos corrupti voluptate minus vero alias, atque velit et aspernatur, ratione distinctio. Corporis, ex perferendis. Nisi, doloribus. Quis, harum.</p>
+			</div>
+			<div class="bottom">
+				<h3>弹窗底部</h3>
+			</div>
+			
+		</div>
+	</div>
+	
+
+</body>
+<script>
+	var but=document.getElementById('but');
+	var wrap=document.getElementById("wrap");
+	var x=document.getElementsByClassName("x")[0];
+	var tan=document.getElementById("tan");
+	but.onclick=function(){
+		block();
+
+	}
+	x.onclick=function(){
+		none();
+	}
+	wrap.onclick=function(){
+		none();
+	}
+	//弹框隐藏
+	function none(){
+		wrap.style.display="none";
+		tan.style.display="none";
+	}
+	//弹框出现
+	function block(){
+		wrap.style.display="block";
+		tan.style.display="block";
+	}
+
+</script>
+</html>
